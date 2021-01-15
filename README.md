@@ -1,5 +1,15 @@
 # ip-lookup
-CLI to find IP address information
+### CLI to find IP address information
+
+*ip-lookup* is a simple command line interface tool that provides information
+about an Internet address (either IP4 or IP6). Its source of information is
+from *[ipstack.com](https://ipstack.com/])*, a commercial provider of IP to
+geolocation information. As such, you must have an *ipstack.com* API Key 
+(free plan [here](https://ipstack.com/product) for 10k requsts/month) to use
+*ip-lookup* and enter it in either `config.py` or as a CLI argument (see
+usage below).
+
+Usage:
 ```
 Usage: ip-lookup [OPTIONS] ADDRESS
 
