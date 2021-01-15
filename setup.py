@@ -39,8 +39,8 @@ setup(
     python_requires=">=3.9.*",
     install_requires=[
         "click >= 7.1.2",
-        "daiquiri >= 2.1.1",
-        "requests >= 2.24.0",
+        "daiquiri >= 3.0.0",
+        "requests >= 2.25.1",
     ],
     entry_points={"console_scripts": ["ip-lookup=ip_lookup.ip_lookup:main"]},
     classifiers=["License :: OSI Approved :: Apache Software License"],
