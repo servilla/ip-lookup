@@ -45,9 +45,9 @@ CONTEXT_SETTINGS = dict(help_option_names=["-h", "--help"])
 @click.command(context_settings=CONTEXT_SETTINGS)
 @click.argument("address", nargs=1, required=True)
 @click.option("-k", "--key", default=Config.API_KEY, help=key_help)
-@click.option("-m", "--map", is_flag=True, default=False, help=map_help)
 @click.option("-b", "--browser", default=Config.BROWSER, help=browser_help)
-def main(address: str, key: str, map: bool, browser: str):
+@click.option("-m", "--map", is_flag=True, default=False, help=map_help)
+def main(address: str, key: str, browser: str, map: bool):
     """
         Perform IP address lookup through ipstack.com
 

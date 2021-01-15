@@ -19,6 +19,7 @@ Usage: ip-lookup [OPTIONS] ADDRESS
 
 Options:
   -k, --key TEXT  ipstack.com API key value
+  -b, --browser TEXT  Path to preferred web browser
   -m, --map       Launch location in Google maps
   -h, --help      Show this message and exit.
 ```
