@@ -13,10 +13,10 @@ Options:
   -h, --help      Show this message and exit.
 ```
 
-Example
+Example:
 
 ```
-ip-lookup 91.90.210.104 -m
+> ip-lookup 91.90.210.104 -m
 ip: 91.90.210.104
 hostname: 91.90.210.104
 type: ipv4
