@@ -18,6 +18,7 @@ Setup and install:
 > git clone https://github.com/servilla/ip-lookup.git
 > cd ip-lookup
 > conda env create --file environment-min.yml
+> conda activate ip-lookup
 > pip install .
 ```
 
