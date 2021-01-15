@@ -38,6 +38,7 @@ logger = daiquiri.getLogger(__name__)
 
 key_help = "ipstack.com API key value"
 map_help = "Launch location in Google maps"
+browser_help = "Path to preferred web browser"
 CONTEXT_SETTINGS = dict(help_option_names=["-h", "--help"])
 
 
@@ -45,7 +46,8 @@ CONTEXT_SETTINGS = dict(help_option_names=["-h", "--help"])
 @click.argument("address", nargs=1, required=True)
 @click.option("-k", "--key", default=Config.API_KEY, help=key_help)
 @click.option("-m", "--map", is_flag=True, default=False, help=map_help)
-def main(address: str, key: str, map: bool):
+@click.option("-b", "--browser", default=Config.BROWSER, help=browser_help)
+def main(address: str, key: str, map: bool, browser: str):
     """
         Perform IP address lookup through ipstack.com
 
@@ -71,7 +73,7 @@ def main(address: str, key: str, map: bool):
         lon = lookup["longitude"]
         if lat is not None and lon is not None:
             map_url = f"https://www.google.com/maps/?q={lat},{lon}"
-            webbrowser.get(Config.BROWSER).open(map_url)
+            webbrowser.get(browser).open(map_url)
 
     return 0
 
