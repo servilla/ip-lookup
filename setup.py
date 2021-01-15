@@ -24,7 +24,7 @@ with open(path.join(here, "LICENSE"), encoding="utf-8") as f:
     full_license = f.read()
 
 setup(
-    name="ip-lookuo",
+    name="ip-lookup",
     version="2021.01.14",
     description="CLI to find IP address information",
     long_description=long_description,
@@ -42,7 +42,7 @@ setup(
         "daiquiri >= 2.1.1",
         "requests >= 2.24.0",
     ],
-    entry_points={"console_scripts": ["ip-lookup=ip-lookup.ip-lookup:main"]},
+    entry_points={"console_scripts": ["ip-lookup=ip_lookup.ip_lookup:main"]},
     classifiers=["License :: OSI Approved :: Apache Software License"],
 )
 
