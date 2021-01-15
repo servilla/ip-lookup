@@ -32,7 +32,7 @@ setup(
     author="Mark Servilla",
     url="https://github.com/servilla/ip-lookup",
     license=full_license,
-    packages=["ip-lookup"],
+    packages=["ip_lookup"],
     include_package_data=True,
     exclude_package_data={"": ["settings.py, properties.py, config.py"]},
     package_dir={"": "src"},
