@@ -71,7 +71,7 @@ def main(address: str, key: str, map: bool):
         lon = lookup["longitude"]
         if lat is not None and lon is not None:
             map_url = f"https://www.google.com/maps/?q={lat},{lon}"
-            webbrowser.get("chrome").open(map_url)
+            webbrowser.get(Config.BROWSER).open(map_url)
 
     return 0
 

@@ -16,3 +16,4 @@
 
 class Config:
     API_KEY = "ipstack.com API key"
+    BROWSER = "path to preferred web browser"
