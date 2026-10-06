@@ -1,0 +1,32 @@
+[project]
+authors = [{name = "Mark Servilla", email = "mark.servilla@gmail.com"}]
+dependencies = ["daiquiri>=3.4.0,<4"]
+name = "ip-lookup"
+requires-python = ">= 3.11"
+version = "2021.01.14"
+description = "CLI to find IP address information"
+license-files = ["LICEN[CS]E*"]
+readme = "README.md"
+
+[project.urls]
+Repository = "[https://github.com/](https://github.com/servilla/ip-lookup)"
+
+[project.scripts]
+ip-lookup = "ip_lookup.ip_lookup:main"
+
+[build-system]
+build-backend = "hatchling.build"
+requires = ["hatchling"]
+
+[tool.pixi.workspace]
+channels = ["conda-forge"]
+platforms = ["linux-64"]
+
+[tool.pixi.pypi-dependencies]
+ip_lookup = { path = ".", editable = true }
+
+[tool.pixi.tasks]
+
+[tool.pixi.dependencies]
+requests = ">=2.34.2,<3"
+click = ">=8.5.0,<9"

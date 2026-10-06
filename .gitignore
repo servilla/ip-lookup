@@ -130,4 +130,6 @@ dmypy.json
 
 # Project
 .idea
-config.py
+config.py# pixi environments
+.pixi/*
+!.pixi/config.toml
